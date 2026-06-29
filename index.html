@@ -48,19 +48,19 @@ const restartBtn = document.getElementById("restart-btn");
 const attemptDisplay = document.getElementById("attempt");
 const result = document.getElementById("result");
 
-// Initial State
+
 guessInput.value = "";
 guessBtn.style.display = "none";
 restartBtn.style.display = "block";
 attemptDisplay.textContent = "0";
 result.textContent = "";
 
-// Check numeric
+
 function isNumeric(value){
     return value.trim() !== "" && !isNaN(value);
 }
 
-// Restart Game
+
 restartBtn.onclick = function(){
 
     target = Math.floor(Math.random() * 20) + 1;
@@ -83,7 +83,7 @@ restartBtn.onclick = function(){
 
 };
 
-// Guess
+
 guessBtn.onclick = function(){
 
     let value = guessInput.value;
